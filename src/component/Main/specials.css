@@ -1,0 +1,155 @@
+.specials{
+  margin-top: 4em;
+  height: 42rem;
+  border-bottom: 0.05rem solid black;
+}
+
+.specials_header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.specials_title{
+  font-family: 'Markazi Text';
+  font-size: 64px;
+  font-weight: 700;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.specials_button_div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  border-color: #f4ce14;
+}
+
+.specials_button {
+  width: 250px;
+  height: 3rem;
+  border-radius: 16px;
+  border-color: #f4ce14;
+  font-family: 'karla';
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f4ce14;
+  transition: 0.3s;
+}
+
+.specials_button:hover {
+  background-color: #fbdabb;
+  border-color: #fbdabb;
+  transition: 0.3s;
+}
+
+.specials_dishes{
+  display: flex;
+  height: 80%;
+  width: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dish{
+  margin-top: -5em;
+  height: auto;
+  width: 235px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #edefee;
+}
+
+.dish_photo {
+  margin-bottom: 0.5em;
+  background-color: #edefee;
+
+}
+ .dish > * {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  background-color: #edefee;
+ }
+
+ .dish_title {
+  font-family: 'Markazi Text';
+  font-size: 23px;
+  font-weight: 700;
+ }
+
+ .dish_price{
+  font-family: 'Karla';
+  font-weight: 800;
+  color: #ee9972
+ }
+
+.dish_description {
+  max-width: 20em;
+  text-align: center;
+}
+
+.add{
+  margin-top: 1em;
+  width: 10em;
+  height: 3rem;
+  border-radius: 16px;
+  border-color: #f4ce14;
+  font-family: 'karla';
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f4ce14;
+  transition: 0.3s;
+}
+
+.add:hover{
+  background-color: #fbdabb;
+  border-color: #fbdabb;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px ) {
+  .specials{
+    margin-top: 0em;
+    height: 110rem;
+  }
+
+  .specials_dishes{
+    padding: 0 2em 0 2em;
+    display: block;
+    height: auto;
+    align-items: center;
+
+  }
+  .dish_description {
+    padding: 0 2em 0 2em;
+    max-width: none;
+    text-align: center;
+  }
+  .dish{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .specials_title{
+    position: absolute;
+    margin-top: -2000%;
+    margin-left: -1000%;
+  }
+
+  .specials_header {
+    height: 10%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,124 @@
+*{
+  font-family: 'Markazi Text';
+}
+
+.testimonials {
+  height: 30rem;
+  background-color: #495E57;
+}
+
+.testimonials > * {
+  background-color: #495E57;
+}
+
+.testimonials_header {
+  padding-top: 2em;
+  margin-bottom: 2em;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.testimonials_title{
+  background-color: #495E57;
+  font-size: 64px;
+  color: #f4ce14;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.testimonial_boxes{
+  margin: -30px 2vw 0 2vw;
+  display: flex;
+  height: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonial_box{
+  margin: 1em;
+  height: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #edefee;
+  border-radius: 16px;
+}
+
+.testimonial_box > *{
+  background-color: #edefee;
+}
+
+.testimonial_photo{
+  height: 80px;
+}
+
+.rating{
+  justify-content: center;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.photo_container{
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo_container >*{
+  background-color: #edefee;
+}
+
+.testimonial_box > *{
+  display: flex;
+  margin-top: 1em;
+}
+
+.testimonial_descr{
+  text-align: center;
+  font-family: 'Karla';
+  font-size: 18px;
+  border-radius: 16px;
+  margin-bottom: 1em;
+}
+
+.testimonial_photo{
+  height: 7em;
+  border-radius: 16px;
+}
+
+.testimonial_name{
+  font-size: 23px;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px ){
+  .testimonials{
+    height: 75rem;
+  }
+  .testimonial_boxes{
+    padding: 0 2em 0 2em;
+    display: block;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .testimonial_descr {
+    padding: 0 2em 0 2em;
+    max-width: none;
+    text-align: center;
+    justify-content: center;
+}
+  .testimonial_box{
+    margin-top: 2em;
+  }
+
+  .testimonials_header {
+    height: 10%;
+}}
