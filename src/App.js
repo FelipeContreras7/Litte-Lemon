@@ -1,4 +1,4 @@
-import Header from './component/header/Header.jsx';
+import Header from './component/Header/Header';
 import Main from './component/Main/Main';
 import './App.css';
 

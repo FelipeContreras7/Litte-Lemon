@@ -1,6 +1,5 @@
 .footer {
-  width: 100%;
-  height: 250px;
+  height: auto;
   display: grid;
   grid-template:
   "img nav1 nav2 nav3" /
