@@ -42,7 +42,7 @@
   padding-right: 12em;
 }
 
-.hero_button {
+.hero_button  {
   width: 150px;
   height: 3rem;
   border-radius: 16px;
@@ -54,10 +54,29 @@
   transition: 0.3s;
 }
 
-.hero_button:hover{
+.hero_button_link {
+  padding-left: 1em;
+  color:black;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border-color: #f4ce14;
+  font-family: 'karla';
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f4ce14;
+  transition: 0.3s;
+}
+
+.hero_button_link:hover, .hero_button:hover{
   background-color: #fbdabb;
   border-color: #fbdabb;
-  transition: 0.3s;
+}
+
+.hero_button_link:active, .hero_button:active{
+  background-color: #ee9972;
+  border-color: #ee9972;
+  transition: 0s;
 }
 
 .hero_photo_container {

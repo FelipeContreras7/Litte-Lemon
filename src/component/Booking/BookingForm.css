@@ -1,0 +1,65 @@
+.form {
+  background-color: #495E57;
+  margin-top: 2em;
+  display: grid;
+  height: 5em;
+  max-width: 200px;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.form_div{
+  background-color: #495E57;
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.label{
+  background-color: #495E57;
+  font-family: 'Markazi Text';
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  height: auto;
+  color: #fbdabb;
+}
+
+.input{
+  width: 40vw;
+  height: 2em;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'karla';
+  transition: 0.3s;
+}
+
+.button{
+  margin-top: 15px;
+  width: 40vw;
+  height: 3em;
+  border-radius: 16px;
+  border-color: #f4ce14;
+  font-family: 'karla';
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f4ce14;
+  transition: 0.3s;
+}
+
+.button:hover{
+  background-color: #fbdabb;
+  border-color: #fbdabb;
+}
+
+.button:active{
+  background-color: #ee9972;
+  border-color: #ee9972;
+  transition: 0s;
+}

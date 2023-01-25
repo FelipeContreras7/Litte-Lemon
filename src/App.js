@@ -1,14 +1,23 @@
+import './App.css';
 import Header from './component/Header/Header';
 import Main from './component/Main/Main';
-import './App.css';
+import Footer from './component/Footer/Footer';
+import BookingPage from './component/Booking/BookingPage';
+import { BrowserRouter , Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
   return (
-    <body class="container">
-      <div class="header"><Header/></div>
-      <div class="main"><Main/></div>
-    </body>
+    <div className="container">
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={[<Header/>, <Main/>]}/>
+            <Route path="/abooking" element={[ <Header/>, <BookingPage />, <Footer/>]} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }
 
