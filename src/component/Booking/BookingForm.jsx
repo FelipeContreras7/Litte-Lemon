@@ -13,6 +13,8 @@ const BookingForm = () => {
     const MM = initDate.getMonth() < 10 ? "0" + (initDate.getMonth() + 1) : initDate.getMonth() + 1;
     const DD = initDate.getDate() < 10 ? "0" + initDate.getDate() : initDate.getDate();
 
+
+
     const initialState = [
         {value: "17:00"},
         {value: "17:30"},
@@ -21,11 +23,48 @@ const BookingForm = () => {
         {value: "19:00"},
         {value: "19:30"}]
 
-    const reducer = (state, action) => {
-        if (action.type === "selected option") return {value: state.value + 25};
-        alert(state.value);
+    // const [reserva, setReserva] = useState({fecha:"", hora:"18:00"});
+
+    const [carga, setCarga] = useState({hora:""});
+
+    function cargarSelect() {
+
+        let aux = 0;
+
+        const arrayVacio = [];
+
+        const initialState = [
+            {value: "17:00"},
+            {value: "17:30"},
+            {value: "18:00"},
+            {value: "18:30"},
+            {value: "19:00"},
+            {value: "19:30"}
+        ]
+
+        const reserva = [
+            {hora: "18:00"},
+            {hora: "21:00"},
+            {hora: "17:00"}
+        ]
+
+    for (let i=0; i < initialState.length; i++) {
+
+        aux = 0;
+
+        for (let e = 0; e < reserva.length; e++) {
+
+            if(initialState[i].value == reserva[e].hora) {
+                aux = 1;
+            }
+        }
+        if(aux == 0) {
+            arrayVacio.push(initialState[i].value);
+        }
     }
-const [state, dispatch] = useReducer(reducer, initialState);
+    console.log(arrayVacio);
+    }
+
 
     const [date, setDate] = useState(YYYY + "-" + MM + "-" + DD);
     const [option, setOption] = useState({initialState});
@@ -35,6 +74,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
     return(
   <div className="form_div">
     <form className="form" onSubmit={handleSubmit}>
+    <button onClick={cargarSelect}>ola</button>
     <label htmlFor="res-date" className="label">Choose date
     <input
             type="date" id="res-date" className="input"
@@ -65,8 +105,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
         <option>Anniversary</option>
     </select>
    </label>
-    <input type="submit" value="Make Your reservation"  className="button" onClick={() => dispatch({type: "selected option"})}/>
-    <button onClick={() => dispatch({type: "selected option"})}>olaola</button>
+    <input type="submit" value="Make Your reservation"  className="button"/>
     </form>
 </div>
     )
