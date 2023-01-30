@@ -1,8 +1,8 @@
 import BookingForm from "./BookingForm";
 
-const BookingPage = () => (
+const BookingPage = ({availableTimes, setAvailableTimes, submitForm}) => (
   <div>
-    <BookingForm/>
+    <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} submitForm={submitForm}/>
   </div>
 )
 

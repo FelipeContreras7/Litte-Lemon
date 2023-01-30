@@ -63,3 +63,47 @@
   border-color: #ee9972;
   transition: 0s;
 }
+
+.success {
+  font-family: 'Karla';
+  font-size: 50px;
+  color: white;
+  background-color: #495E57;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -20vh;
+}
+
+.success_container {
+  height: 66vh;
+  background-color: #495E57;
+  text-align: center;
+
+}
+
+.buttonlink{
+  padding-left: 1em;
+  color:black;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border-color: #f4ce14;
+  font-family: 'karla';
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f4ce14;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.buttonlink:hover {
+  background-color: #fbdabb;
+  border-color: #fbdabb;
+}
+
+.buttonlink:active {
+  background-color: #ee9972;
+  border-color: #ee9972;
+  transition: 0s;
+}
